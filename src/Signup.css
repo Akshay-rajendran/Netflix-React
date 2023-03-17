@@ -8,16 +8,14 @@ body{
    justify-content: center;
    align-items: center;
 }
-img{
-    transform: translate(-380px,-320px );
-    color: red;
-    font-size: xx-large;
-}
+
+
 .Signup{
     width: 450px;
     height: 660px;
     background-color: rgba(5, 5, 5, 0.8);
     margin-top: 80px;
+    margin-right: 200px;
 }
 .p{
     color: #8c8c8c;
@@ -37,16 +35,16 @@ h3{
 }
 h2{
     color:white;
-    padding-top: 60px;
+    padding-top: 20px;
     padding-right: 220px;
     font-size: xx-large;
 }
 .input{
     width: 300px;
     height: 50px;
- margin-top: 20px;
+
  margin-bottom: 20px;
- background-color:#8c8c8c;
+ background-color:#333;
 
 }
 
@@ -62,5 +60,13 @@ h2{
     border-radius: none;
 }
 .input::placeholder{
-    color: #110f0f;
+    color: #8c8c8c;
+}
+.netflixlogo{
+    width: 200px;
+ line-height: 110px;   
+ transform: translate(-220px,-330px );
+}
+.signupnow{
+    color: white;
 }
