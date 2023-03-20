@@ -1,0 +1,75 @@
+h6{
+    color: white;
+    font-size: small;
+    z-index: 20;
+    font-weight: 380;
+    
+}
+.home-navbar{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+    background-color: transparent;
+   
+ 
+}
+.netflix-profile{
+    width: 32px;
+    height: 30px;
+    border-radius: 3px;
+}
+.left{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 800px;
+}
+.home-logo{
+    width: 100px;
+    height: 60px;
+}
+.main{
+    width: 100vw;
+    background-image: url("https://images3.alphacoders.com/982/982364.jpg");
+    background-size: 100vw 100vh;
+    height: 100vh;
+}
+.right{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-right: 20px;
+    width: 200px;
+
+}
+.h1{
+    color: #fff;
+}
+.banner{
+  
+    width: 700px;
+    margin-top: 370px;
+    
+}
+.buttons{
+ 
+    width: 300px;
+    margin-left: 190px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-around;
+}
+.play{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.button-more{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color:rgb(0,0,0, .5);
+    color: #fff;
+}
