@@ -6,8 +6,8 @@ function Banner() {
         <div className="banner">
             <h1 className="h1">How To Train Your Dragon</h1>
             <div className="buttons">
-                <button className="play"><PlayArrowIcon />play</button>
-                <button className="button-more"><InfoOutlinedIcon />more info</button>
+                <button className="play"><div><PlayArrowIcon /></div>play</button>
+                <button className="button-more"><div><InfoOutlinedIcon /></div>more info</button>
             </div>
         </div>
     )

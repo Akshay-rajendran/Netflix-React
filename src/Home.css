@@ -12,8 +12,9 @@ h6{
     align-items: center;
     height: 50px;
     background-color: transparent;
-      position: fixed;
+    position: fixed;
     top: 0;
+    
    
  
 }
@@ -54,7 +55,7 @@ h6{
   
     width: 700px;
     /* margin-top: 370px; */
-        transform: translate(10px,500px);
+    transform: translate(10px,500px);
     
 }
 .buttons{
@@ -77,3 +78,10 @@ h6{
     background-color:rgb(0,0,0, .5);
     color: #fff;
 }
+.button-more div{
+    margin-top: 8px;
+}
+.play div {
+    margin-top: 8px;
+}
+
