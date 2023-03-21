@@ -12,6 +12,8 @@ h6{
     align-items: center;
     height: 50px;
     background-color: transparent;
+      position: fixed;
+    top: 0;
    
  
 }
@@ -46,11 +48,13 @@ h6{
 }
 .h1{
     color: #fff;
+    margin-top: 0;
 }
 .banner{
   
     width: 700px;
-    margin-top: 370px;
+    /* margin-top: 370px; */
+        transform: translate(10px,500px);
     
 }
 .buttons{
