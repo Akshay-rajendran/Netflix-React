@@ -12,8 +12,6 @@ h6{
     align-items: center;
     height: 50px;
     background-color: transparent;
-    position: fixed;
-    top: 0;
    
  
 }
@@ -55,9 +53,7 @@ h6{
 .banner{
   
     width: 700px;
-    /* margin-top: 370px; */
-    transform: translate(10px,500px);
-    margin-right: 0;
+    margin-top: 370px;
     
 }
 .buttons{
@@ -133,3 +129,10 @@ h6{
 .card1::-webkit-scrollbar{
     background: transparent;
 }
+.button-more div{
+    margin-top: 8px;
+}
+.play div {
+    margin-top: 8px;
+}
+
