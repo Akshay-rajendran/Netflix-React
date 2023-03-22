@@ -64,6 +64,13 @@ h1{
     margin-right: 8px;
  
 }
+
+option{
+    background-color: rgb(237, 237, 238);
+    color: #000;
+    width: 130px;
+    border-radius: 5px;
+}
 .back{
     background-color: red;
     color:white;

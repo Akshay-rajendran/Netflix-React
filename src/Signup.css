@@ -38,6 +38,7 @@ h2{
     padding-top: 20px;
     padding-right: 220px;
     font-size: xx-large;
+    font-weight: 400;
 }
 .input{
     width: 300px;
@@ -69,4 +70,5 @@ h2{
 }
 .signupnow{
     color: white;
+    font-weight: 200;
 }
