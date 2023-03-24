@@ -3,13 +3,13 @@ import { useEffect, useState } from 'react'
 import { Action } from '../API_KEY/Api.jsx'
 import axios from 'axios'
 import Movielist from './Movielist.jsx'
-function Movies() {
+function Movies({title,url}) {
 
     const [movie, setmovie] = useState()
     async function FetchApi() {
-        const calling = await axios.get(Action)
+        const calling = await axios.get(url)
         setmovie(calling.data.results)
-        console.log("movies", calling.data.results);
+        console.log(title, calling.data.results);
     }
     useEffect(() => {
         FetchApi()
@@ -18,8 +18,8 @@ function Movies() {
         
             <div className="cards">
                 
-                    <p className="h12">horrer</p>
-                    <div className="card1">
+            <p className="h12">{title}</p>
+                    <div className="card1 ">
                         {movie && movie.map((m) => {
                             return (
                               <Movielist movie={m} />

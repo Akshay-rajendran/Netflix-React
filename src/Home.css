@@ -12,6 +12,9 @@ h6{
     align-items: center;
     height: 50px;
     background-color: transparent;
+    position: fixed;
+    top: 0;
+    /* backdrop-filter: blur(2px); */
    
  
 }
@@ -32,7 +35,7 @@ h6{
 }
 .main{
     width: 100vw;
-    background-image: url("https://images3.alphacoders.com/982/982364.jpg");
+    /* background-image: url("https://images3.alphacoders.com/982/982364.jpg"); */
     background-size:cover;
     height: 100vh;
     top: 0;
@@ -49,17 +52,21 @@ h6{
 .h1{
     color: #fff;
     margin-top: 0;
+    transform: translate(-155px);
 }
 .banner{
   
-    width: 700px;
-    margin-top: 370px;
+    width: 900px;
+    height: 300px;
+    /* margin-top: 330px; */
+    transform: translate(0px,330px);
+    /* border: 1px solid white; */
     
 }
 .buttons{
  
     width: 300px;
-    margin-left: 190px;
+    margin-left: 25px;
     margin-bottom: 20px;
     display: flex;
     justify-content: space-around;
@@ -95,7 +102,7 @@ h6{
     background-color: black;
 }
 .card{
-   background-color: aqua;
+   /* background-color: aqua; */
     min-width: 280px;
     height: 100px;
     margin-right: 5px;
@@ -108,6 +115,7 @@ h6{
    width: 100vw;
    
     background-color: black;
+ 
 }
 .card1{
     display: flex;
@@ -124,6 +132,8 @@ h6{
     font-weight: 500;
     font-size: xx-large;
     margin-top: 0;
+ /* transform: translate(0px,-50px); */
+ margin-left: 30px;
 
 }
 .card1::-webkit-scrollbar{
@@ -136,3 +146,15 @@ h6{
     margin-top: 8px;
 }
 
+.fog{
+    width: 100vw;
+    height: 30px;
+    /* background-color: aqua; */
+    transform: translate(0px,327px);
+    background-image: linear-gradient(180deg,transparent,rgb(5, 5, 5));
+}
+.banner-overview{
+    width: 600px  ;
+    margin-left: 40px;
+    text-align: start;
+}
