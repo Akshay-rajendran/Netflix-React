@@ -10,7 +10,7 @@ function Home() {
   const[image,setimage]=useState({})
 async function callimage(){
   let images=await axios.get(Action)
-  console.log("images",images);
+  // console.log("images",images);
   setimage(images.data.results[0])
 
 }

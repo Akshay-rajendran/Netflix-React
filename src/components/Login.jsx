@@ -1,9 +1,29 @@
-import React from 'react'
+
 import '../Login.css'
 import LanguageIcon from '@mui/icons-material/Language';
 import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
+import { useState ,useRef} from 'react';
+import { Navigate,useNavigate } from 'react-router-dom';
+import {Link } from 'react-router-dom';
 
-function Login() {
+function Login(props) {
+
+  const navigate=useNavigate()
+
+  const usergmailRef=useRef()
+    async function submit(){
+      console.log(usergmailRef.current.value,props.user.password);
+    if(usergmailRef.current.value==props.user.password){
+      Navigate("/home")
+    }else{
+      navigate('/')
+    }
+    }
+
+
+
+
+
   return (
     <div className="back-image">
       <div className='Loginblend'>
@@ -24,8 +44,8 @@ function Login() {
         <div className='h2'>Watch anywhere. Cancel anytime.</div>
         <div className='h3'>Ready to watch? Enter your email to create or restart your membership.</div>
         <div className='gmail-button'>
-          <input type="text" className='gmail' placeholder='Email address' />
-          <button className='gohome'>Get started <ArrowForwardIosIcon /></button>
+          <input type="text" className='gmail'ref={usergmailRef} placeholder='Email address' />
+          <button className='gohome' onClick={submit}>Get started <ArrowForwardIosIcon /></button>
         </div>
       </div>
     </div>
