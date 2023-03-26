@@ -35,6 +35,8 @@ function Movielist({ movie }) {
       <Dialog  open={open} onClose={handleClose} >
        <YouTube videoId={moivetrailor.key}/>
        </Dialog>}
+
+        
     </>
   )
 }
