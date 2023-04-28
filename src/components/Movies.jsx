@@ -28,26 +28,26 @@ const Listref=useRef()
     }, [])
 
 
-    const handleClick=(direction)=>{
-        // setIsMoved(true);
-        // console.log(slideNumber);
-        if (direction === "left" && slideNumber >= -1) {
-            let distance = Listref.current.getBoundingClientRect().x + 50;
-          setSlideNumber((slideNumber)=>(slideNumber - 1));
-          Listref.current.style.transform = `translateX(${230 + distance}px)`;
-        }
-        if (direction === "right" && slideNumber < 14) {
-        let distance = Listref.current.getBoundingClientRect().x - 50;
-          setSlideNumber((slideNumber)=>(slideNumber + 1));
-          Listref.current.style.transform = `translateX(${-230 + distance}px)`;
-        }
-    }
+    // const handleClick=(direction)=>{
+    //     setIsMoved(true);
+    //     console.log(slideNumber);
+    //     if (direction === "left" && slideNumber >= -1) {
+    //         let distance = Listref.current.getBoundingClientRect().x + 50;
+    //       setSlideNumber((slideNumber)=>(slideNumber - 1));
+    //       Listref.current.style.transform = `translateX(${230 + distance}px)`;
+    //     }
+    //     if (direction === "right" && slideNumber < 14) {
+    //     let distance = Listref.current.getBoundingClientRect().x - 50;
+    //       setSlideNumber((slideNumber)=>(slideNumber + 1));
+    //       Listref.current.style.transform = `translateX(${-230 + distance}px)`;
+    //     }
+    // }
     return (
         
             <div className="cards" >
                 
                 <p className="h12">{title}</p>
-                <ArrowBackIosNewIcon className='scrollback'  onClick={()=>handleClick("left")}/>
+                {/* <ArrowBackIosNewIcon className='scrollback'  onClick={()=>handleClick("left")}/> */}
                     <div className="card1 " ref={Listref} >
                        
                         {movie && movie.map((m) => {
@@ -57,7 +57,7 @@ const Listref=useRef()
                         })}
                          
                      </div>
-                     <ArrowForwardIosIcon className='forward' onClick={()=>handleClick("right")}/>
+                     {/* <ArrowForwardIosIcon className='forward' onClick={()=>handleClick("right")}/> */}
                      
             </div>
         

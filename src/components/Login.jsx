@@ -12,13 +12,14 @@ function Login(props) {
 
   const usergmailRef=useRef()
     async function submit(){
-      console.log(usergmailRef.current.value,props.user.password);
-    if(usergmailRef.current.value==props.user.password){
-      Navigate("/home")
-    }else{
-      navigate('/')
+      console.log(props);
+      // console.log(usergmailRef.current.value,props.user.password);
+      
+          navigate("/home")
+    
     }
-    }
+    
+
 
 
 
