@@ -1,4 +1,4 @@
-.loginlogo{
+.loginlogo{ 
     width: 200px;
     line-height: 110px;   
     margin-left: 60px;
@@ -74,14 +74,15 @@ option{
 .back{
     background-color: red;
     color:white;
-    margin-right: 130px;
-    margin-left: 30px;
+    /* margin-right: 130px; */
+    /* margin-left: 30px;    */
     height: 37px;
 }
 .bar-rightside{
     display: flex;
     align-items: center;
     justify-content: center;
+    width: 90%;
    
 }
 .select-wrapper{
@@ -89,4 +90,54 @@ option{
     color:white;
     display: flex;
     align-items: center;
+}
+@media (max-width:952px){
+.Loginblend{
+    width: 500px;
+}
+.back{
+    background-color: red;
+    color:white;
+    margin-right: 130px;
+    margin-left: 30px;
+    height: 37px;
+    width: 100px;
+}
+.nav{
+    width: 97%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* border: 1px solid white; */
+}
+.loginlogo{ 
+    width: 200px;
+    /* line-height: 110px;    */
+    /* margin-left: 60px; */
+    margin-left: 0;
+    /* border: 1px solid white; */
+}
+h1{
+    color: white;
+    /* margin-top: 180px;    */
+    top:0
+}
+.h3{
+    font-size: 1.5rem;
+    color: white;
+    width: 97%;
+}
+.h2{
+    /* margin-left: 10px; */
+    color: white;
+    font-size: 1.5rem;
+ margin-bottom: 20px;
+}
+.gmail-button{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    margin-top: 15px;
+}
 }

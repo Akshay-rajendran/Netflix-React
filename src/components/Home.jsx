@@ -19,13 +19,14 @@ useEffect(()=>{
 })
   return (<>
     <div className="all">
-      <div className='main' style={{backgroundImage:`url(https://image.tmdb.org/t/p/original${image.backdrop_path})`,backgroundSize:"cover"}}>
+      <div className='main' style={{backgroundImage:`url(https://image.tmdb.org/t/p/original${image.backdrop_path})`}}>
         <NavBar />
        
   
         <Banner  />
-        <div className="fog" > </div>
+        
 
+      {/* <div className="fog" > </div> */}
       </div>
       <Movies title="Horrer" url={Action}/>
       <Movies title="Adventure" url={Adventure}/>

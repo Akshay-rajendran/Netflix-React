@@ -72,3 +72,18 @@ h2{
     color: white;
     font-weight: 200;
 }
+@media (max-width:952px){
+    .Signup{
+        width:600px;
+        height: 550px;
+        margin-top: 200px;
+        
+    }
+    .input{
+        margin: 20px;
+    }
+    .netflixlogo{
+        transform: translate(110px,-340px);
+        /* margin-bottom: 60px; */
+    }
+}
